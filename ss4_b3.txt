@@ -1,0 +1,168 @@
+Bước 1: Thiết kế giải pháp (I/O)
+Bài toán
+
+Cửa hàng muốn tự động hóa việc xử lý và tổng hợp thông tin về các chủ đề:
+
+Chain-of-Thought
+Prompt Chaining
+Xử lý đứt gãy (Context Break/Context Recovery)
+
+AI cần phân tích dữ liệu đầu vào, phát hiện lỗi dữ liệu và trả về kết quả theo cấu trúc chuẩn.
+
+Input
+[CHỦ_ĐỀ]
+[MÔ_TẢ]
+[MỤC_TIÊU]
+[NGƯỜI_NHẬN]
+
+
+Ví dụ:
+
+Prompt Chaining
+
+Kỹ thuật chia một nhiệm vụ lớn thành nhiều prompt nhỏ liên tiếp.
+
+Đào tạo nhân viên mới hiểu cách thiết kế quy trình AI.
+
+Nhân viên mới
+
+Kiểm tra dữ liệu đầu vào
+
+AI phải thực hiện các bước logic:
+
+Kiểm tra các trường có bị để trống không.
+Kiểm tra độ dài mô tả tối thiểu.
+Kiểm tra chủ đề có thuộc một trong các nhóm:
+Chain-of-Thought
+Prompt Chaining
+Xử lý đứt gãy
+Nếu phát hiện lỗi:
+Không tạo báo cáo.
+Trả về danh sách lỗi.
+Nếu dữ liệu hợp lệ:
+Tiếp tục xử lý và sinh kết quả.
+Output mong muốn
+[KẾT QUẢ]
+
+Chủ đề:
+...
+
+Tóm tắt:
+...
+
+Ứng dụng thực tế:
+...
+
+Các rủi ro dữ liệu:
+...
+
+Khuyến nghị:
+...
+
+Bước 2: Viết Prompt Hoàn Chỉnh
+Vai trò:
+Bạn là chuyên gia Kỹ thuật Prompting Nâng cao.
+
+Nhiệm vụ:
+Phân tích thông tin được cung cấp và tạo báo cáo ngắn gọn.
+
+Dữ liệu đầu vào:
+
+[CHỦ_ĐỀ]
+
+[MÔ_TẢ]
+
+[MỤC_TIÊU]
+
+[NGƯỜI_NHẬN]
+
+Quy trình xử lý:
+
+Bước 1:
+Kiểm tra dữ liệu đầu vào.
+
+- Nếu bất kỳ trường nào bị bỏ trống:
+  => Trả về:
+  "LỖI: Thiếu dữ liệu ở trường tương ứng."
+
+- Nếu [CHỦ_ĐỀ] không thuộc:
+  + Chain-of-Thought
+  + Prompt Chaining
+  + Xử lý đứt gãy
+
+  => Trả về:
+  "LỖI: Chủ đề không hợp lệ."
+
+- Nếu [MÔ_TẢ] ngắn hơn 20 ký tự:
+  => Trả về:
+  "LỖI: Mô tả quá ngắn."
+
+Bước 2:
+Nếu dữ liệu hợp lệ, hãy:
+
+- Tóm tắt nội dung chủ đề.
+- Nêu ứng dụng thực tế.
+- Chỉ ra rủi ro dữ liệu có thể xảy ra.
+- Đưa ra khuyến nghị cải thiện.
+
+Định dạng đầu ra:
+
+[KẾT QUẢ]
+
+Chủ đề:
+...
+
+Tóm tắt:
+...
+
+Ứng dụng thực tế:
+...
+
+Các rủi ro dữ liệu:
+...
+
+Khuyến nghị:
+...
+
+Không viết lời chào.
+Không viết lời kết.
+Chỉ xuất đúng định dạng trên.
+
+Chạy thử Prompt
+Dữ liệu đầu vào
+Prompt Chaining
+
+Kỹ thuật chia một nhiệm vụ lớn thành nhiều prompt nhỏ liên tiếp để nâng cao độ chính xác của kết quả.
+
+Đào tạo nhân viên mới.
+
+Nhân viên cửa hàng.
+
+Kết quả phản hồi của AI
+[KẾT QUẢ]
+
+Chủ đề:
+Prompt Chaining
+
+Tóm tắt:
+Prompt Chaining là kỹ thuật chia một nhiệm vụ phức tạp thành nhiều bước xử lý liên tiếp. Kết quả của bước trước được sử dụng làm đầu vào cho bước tiếp theo.
+
+Ứng dụng thực tế:
+Xây dựng quy trình tự động phân loại, phân tích và tổng hợp thông tin khách hàng trong cửa hàng.
+
+Các rủi ro dữ liệu:
+- Thiếu dữ liệu đầu vào.
+- Sai lệch dữ liệu giữa các bước.
+- Mất ngữ cảnh khi chuỗi xử lý quá dài.
+
+Khuyến nghị:
+- Kiểm tra dữ liệu ở từng bước.
+- Chuẩn hóa định dạng đầu vào và đầu ra.
+- Thiết kế cơ chế phục hồi khi xảy ra đứt gãy ngữ cảnh.
+
+
+ Giải pháp đã áp dụng các kỹ thuật Prompting Nâng cao gồm:
+
+Chain-of-Thought: kiểm tra dữ liệu theo từng bước logic.
+Prompt Chaining: chia quy trình thành các bước xác thực và sinh báo cáo.
+Xử lý đứt gãy: phát hiện dữ liệu thiếu hoặc sai trước khi tiếp tục xử lý.

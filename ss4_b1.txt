@@ -1,0 +1,37 @@
+ Phân tích lỗi
+
+Prompt lỗi:
+
+Yêu cầu: Hãy giải thích ngắn gọn các nội dung của Chain-of-Thought, Prompt Chaining, xử lý đứt gãy.
+
+Các phần thừa thãi thường xuất hiện trong câu trả lời của AI do prompt chưa có ràng buộc định dạng:
+
+Lời chào mở đầu
+
+Ví dụ: "Xin chào, tôi rất vui được hỗ trợ bạn hôm nay."
+
+Câu dẫn dài dòng
+
+Ví dụ: "Đây là một chủ đề rất quan trọng trong lĩnh vực AI và kỹ thuật Prompting."
+
+Lời kết không cần thiết
+
+Ví dụ: "Hy vọng phần giải thích trên hữu ích cho bạn. Nếu cần thêm thông tin, hãy cho tôi biết."
+prompt:
+
+Nhiệm vụ: Giải thích các khái niệm Chain-of-Thought, Prompt Chaining và Xử lý đứt gãy.
+
+Ràng buộc bắt buộc:
+- Trả lời ngắn gọn.
+- Chỉ sử dụng gạch đầu dòng.
+- Mỗi khái niệm tối đa 2 câu.
+- Không viết lời chào mở đầu.
+- Không viết câu dẫn nhập.
+- Không viết lời kết.
+- Không giải thích ngoài phạm vi yêu cầu.
+
+Định dạng đầu ra:
+
+- Chain-of-Thought: [giải thích]
+- Prompt Chaining: [giải thích]
+- Xử lý đứt gãy: [giải thích]

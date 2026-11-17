@@ -1,0 +1,335 @@
+BÁO CÁO THIẾT KẾ GIẢI PHÁP TỔNG HỢP
+Chủ đề: Kỹ thuật Prompting Nâng cao (Logic & Chuỗi)
+1. Phân tích bài toán
+Mục tiêu
+
+Xây dựng chuỗi Prompt Chaining hoàn chỉnh để:
+
+Tiếp nhận dữ liệu đầu vào.
+Kiểm tra dữ liệu hợp lệ.
+Phân tích nội dung bằng tư duy logic.
+Xử lý trường hợp đứt gãy hoặc thiếu dữ liệu.
+Sinh báo cáo cuối cùng ngắn gọn, sạch lỗi.
+Kiến thức được áp dụng
+Chain-of-Thought
+
+Buộc AI suy luận từng bước thay vì trả lời trực tiếp.
+
+Prompt Chaining
+
+Chia bài toán lớn thành nhiều prompt nhỏ liên kết tuần tự.
+
+Xử lý đứt gãy
+
+Kiểm tra lỗi và phục hồi quy trình khi dữ liệu thiếu hoặc sai.
+
+2. Thiết kế I/O
+Input
+[CHỦ_ĐỀ]
+
+[MÔ_TẢ]
+
+[MỤC_TIÊU]
+
+[ĐỐI_TƯỢNG]
+
+Ví dụ
+Prompt Chaining
+
+Kỹ thuật chia một nhiệm vụ phức tạp thành nhiều bước xử lý liên kết với nhau.
+
+Đào tạo nhân viên AI.
+
+Nhân viên mới.
+
+Output
+[BÁO CÁO]
+
+Chủ đề:
+...
+
+Mức độ hợp lệ:
+...
+
+Tóm tắt:
+...
+
+Ứng dụng:
+...
+
+Rủi ro:
+...
+
+Khuyến nghị:
+...
+
+3. Thiết kế Prompt Chaining
+Prompt 1 - Kiểm tra dữ liệu
+Vai trò:
+Chuyên gia kiểm định dữ liệu.
+
+Nhiệm vụ:
+
+Kiểm tra:
+
+- Có trường nào bị bỏ trống không?
+- Mô tả có dưới 20 ký tự không?
+- Chủ đề có thuộc:
+  + Chain-of-Thought
+  + Prompt Chaining
+  + Xử lý đứt gãy
+
+Kết quả trả về:
+
+[VALID]
+hoặc
+[ERROR]
+
+Nếu ERROR:
+Liệt kê lỗi chi tiết.
+
+Kết quả mẫu
+[VALID]
+
+Tất cả dữ liệu hợp lệ.
+
+Prompt 2 - Suy luận Logic (Chain-of-Thought)
+
+Input:
+
+Kết quả từ Prompt 1
++
+Thông tin nghiệp vụ
+
+
+Prompt:
+
+Thực hiện suy luận theo trình tự:
+
+Bước 1:
+Xác định mục đích chủ đề.
+
+Bước 2:
+Phân tích giá trị ứng dụng.
+
+Bước 3:
+Xác định rủi ro.
+
+Bước 4:
+Đề xuất giải pháp cải thiện.
+
+Chỉ xuất kết quả cuối cùng.
+Không giải thích quá trình suy luận.
+
+Kết quả mẫu
+Mục đích:
+Tăng độ chính xác của quy trình AI.
+
+Ứng dụng:
+Tự động hóa xử lý thông tin.
+
+Rủi ro:
+Mất ngữ cảnh giữa các bước.
+
+Đề xuất:
+Chuẩn hóa đầu ra từng giai đoạn.
+
+Prompt 3 - Phục hồi đứt gãy
+
+Prompt:
+
+Nếu phát hiện:
+
+- Thiếu dữ liệu
+- Sai định dạng
+- Chủ đề không hợp lệ
+
+Thực hiện:
+
+1. Ghi rõ lỗi.
+2. Đề xuất dữ liệu cần bổ sung.
+3. Không tiếp tục bước tiếp theo.
+
+Định dạng:
+
+[LỖI]
+
+Nguyên nhân:
+...
+
+Khuyến nghị:
+...
+
+Kết quả mẫu
+[LỖI]
+
+Nguyên nhân:
+Thiếu trường MÔ_TẢ.
+
+Khuyến nghị:
+Cung cấp mô tả tối thiểu 20 ký tự.
+
+Prompt 4 - Sinh báo cáo cuối
+
+Prompt:
+
+Tổng hợp toàn bộ kết quả các bước trước.
+
+Xuất đúng định dạng:
+
+[BÁO CÁO]
+
+Chủ đề:
+...
+
+Mức độ hợp lệ:
+...
+
+Tóm tắt:
+...
+
+Ứng dụng:
+...
+
+Rủi ro:
+...
+
+Khuyến nghị:
+...
+
+Không viết lời chào.
+Không viết lời kết.
+
+4. Cơ chế bắt lỗi dữ liệu dị biệt
+Trường hợp 1: Thiếu dữ liệu
+
+Ví dụ
+
+Chủ đề:
+Prompt Chaining
+
+Mô tả:
+(trống)
+
+
+Kết quả
+
+[ERROR]
+
+Thiếu trường MÔ_TẢ.
+
+Trường hợp 2: Chủ đề sai
+
+Ví dụ
+
+Chủ đề:
+Machine Learning
+
+
+Kết quả
+
+[ERROR]
+
+Chủ đề không thuộc phạm vi hệ thống.
+
+Trường hợp 3: Mô tả quá ngắn
+
+Ví dụ
+
+Mô tả:
+Hay.
+
+
+Kết quả
+
+[ERROR]
+
+Mô tả không đủ thông tin để phân tích.
+
+5. Prompt Thực Thi Hoàn Chỉnh
+Bạn là chuyên gia Kỹ thuật Prompting Nâng cao.
+
+Mục tiêu:
+Xử lý dữ liệu theo quy trình khép kín.
+
+Dữ liệu:
+
+[CHỦ_ĐỀ]
+[MÔ_TẢ]
+[MỤC_TIÊU]
+[ĐỐI_TƯỢNG]
+
+Quy trình:
+
+1. Kiểm tra dữ liệu.
+2. Phát hiện lỗi.
+3. Nếu lỗi:
+   - Dừng xử lý.
+   - Xuất thông báo lỗi.
+4. Nếu hợp lệ:
+   - Phân tích theo logic từng bước.
+   - Xác định ứng dụng.
+   - Xác định rủi ro.
+   - Đề xuất cải tiến.
+5. Xuất báo cáo chuẩn.
+
+Định dạng:
+
+[BÁO CÁO]
+
+Chủ đề:
+...
+
+Mức độ hợp lệ:
+...
+
+Tóm tắt:
+...
+
+Ứng dụng:
+...
+
+Rủi ro:
+...
+
+Khuyến nghị:
+...
+
+Không viết lời chào.
+Không viết lời kết.
+Không thêm nội dung ngoài mẫu.
+
+6. Kết quả chạy thử
+Input
+Prompt Chaining
+
+Kỹ thuật chia một nhiệm vụ lớn thành nhiều bước xử lý liên tiếp để nâng cao độ chính xác của AI.
+
+Đào tạo nhân viên AI.
+
+Nhân viên mới.
+
+Output
+[BÁO CÁO]
+
+Chủ đề:
+Prompt Chaining
+
+Mức độ hợp lệ:
+Hợp lệ
+
+Tóm tắt:
+Prompt Chaining là kỹ thuật chia nhiệm vụ phức tạp thành nhiều bước xử lý liên tiếp, trong đó đầu ra của bước trước trở thành đầu vào của bước sau.
+
+Ứng dụng:
+Tự động hóa quy trình phân tích dữ liệu, tạo báo cáo và hỗ trợ ra quyết định.
+
+Rủi ro:
+- Thiếu dữ liệu giữa các bước.
+- Sai lệch ngữ cảnh.
+- Đầu ra không đồng nhất.
+
+Chain-of-Thought: Phân tích theo từng bước logic.
+Prompt Chaining: Chia bài toán thành 4 prompt liên kết tuần tự.
+Xử lý đứt gãy: Bắt lỗi dữ liệu và dừng quy trình an toàn trước khi sinh kết quả.
+Tối ưu token: Chỉ truyền dữ liệu cần thiết giữa các bước và chuẩn hóa định dạng đầu ra.

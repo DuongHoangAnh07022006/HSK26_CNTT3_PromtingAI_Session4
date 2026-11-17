@@ -1,0 +1,50 @@
+Bước 1: Phân tích lỗi
+
+Prompt lỗi:
+
+Hãy viết một bài chia sẻ về Kỹ thuật Prompting Nâng cao (Logic & Chuỗi) bằng ngôn ngữ [language]. Dành cho đối tượng {audience}.
+
+
+Lỗi của prompt:
+
+Không thống nhất cú pháp biến
+
+Biến language dùng ngoặc vuông [ ].
+Biến audience dùng ngoặc nhọn { }.
+Hệ thống tự động hóa thường cần một quy ước duy nhất để nhận diện và thay thế biến.
+
+Khó xử lý bằng công cụ tự động
+
+Nếu chương trình được cấu hình để tìm biến dạng [TÊN_BIẾN] thì sẽ bỏ sót {audience}.
+Ngược lại, nếu chỉ xử lý {TÊN_BIẾN} thì sẽ không nhận diện [language].
+
+Giảm tính bảo trì của prompt
+
+Khi số lượng biến tăng lên, việc sử dụng nhiều kiểu ký hiệu dễ gây nhầm lẫn cho người viết và người quản lý prompt.
+Khó kiểm tra xem tất cả biến đã được thay thế đầy đủ hay chưa.
+Bước 2: Đồng bộ biến số
+Prompt đã chuẩn hóa
+Hãy viết một bài chia sẻ về Kỹ thuật Prompting Nâng cao (Logic & Chuỗi) bằng ngôn ngữ [NGÔN_NGỮ]. Dành cho đối tượng [ĐỐI_TƯỢNG].
+
+Quy ước sử dụng
+Tất cả biến sử dụng dấu ngoặc vuông [ ].
+Tên biến viết IN HOA.
+Dùng dấu gạch dưới _ nếu biến gồm nhiều từ.
+Không trộn lẫn nhiều kiểu khai báo biến trong cùng một prompt.
+Kết quả chạy thử
+Giá trị biến
+[NGÔN_NGỮ] = Tiếng Việt
+[ĐỐI_TƯỢNG] = Sinh viên Công nghệ Thông tin
+
+Prompt sau khi thay thế
+Hãy viết một bài chia sẻ về Kỹ thuật Prompting Nâng cao (Logic & Chuỗi) bằng ngôn ngữ Tiếng Việt. Dành cho đối tượng Sinh viên Công nghệ Thông tin.
+
+Kết quả mẫu
+
+Kỹ thuật Prompting Nâng cao (Logic & Chuỗi) là phương pháp thiết kế prompt giúp AI suy luận có cấu trúc thay vì trả lời theo cách ngẫu nhiên. Thông qua các kỹ thuật như Chain-of-Thought, Prompt Chaining và xử lý đứt gãy ngữ cảnh, người dùng có thể cải thiện đáng kể độ chính xác của kết quả.
+
+Đối với sinh viên Công nghệ Thông tin, việc nắm vững các kỹ thuật này giúp xây dựng hệ thống AI hiệu quả hơn, tối ưu quy trình tự động hóa và nâng cao khả năng phát triển các ứng dụng sử dụng mô hình ngôn ngữ lớn trong thực tế.
+
+Prompt nộp bài
+context: bạn là giảng viên chuyên ngành IT
+Hãy viết một bài chia sẻ về Kỹ thuật Prompting Nâng cao (Logic & Chuỗi) bằng ngôn ngữ [NGÔN_NGỮ]. Dành cho đối tượng [ĐỐI_TƯỢNG].
